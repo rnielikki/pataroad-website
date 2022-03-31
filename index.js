@@ -20,7 +20,12 @@ window.addEventListener("load", function(){
 
     function ddayMode(){
         downloadButton.classList.add("download-disabled");
-        downloadButton.href = "#";
+        let p = document.createElement("p");
+        p.textContent = downloadButton.textContent;
+        p.classList.add("download", "download-disabled");
+        downloadButton.parentNode.insertBefore(p, downloadButton.nextSibling);
+        downloadButton.parentElement.removeChild(downloadButton);
+
         dateDisplay.style.display = "block";
 
         const difference = (releaseDate - current) / 86400000;

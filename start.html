@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download PATAROAD</title>
+    <script>
+       window.addEventListener("load", function(){
+           const counter = document.querySelector(".counter");
+           const header = document.querySelector(".header");
+           const subtitle = document.querySelector(".subtitle");
+           let count = 10;
+           const internval = setInterval(function(){
+               count--;
+               if(count == 0){
+                   clearInterval(internval);
+               }
+               else{
+                   counter.textContent = count;
+               }
+           }, 1000);
+           console.log("\n%c•%c—%c ●%c—%c•\n%c %c \n\n","font-weight:bold;font-size:50px;color:#000;margin-right:-10px;line-height:50%","line-height:50%;font-weight:bold;font-size:50px;color:#000;margin-right:-10px;","border-radius:50%;background-color:#fff;color:#000;font-size:25px;width:50px;height:50px;border:10px solid #000","font-weight:bold;font-size:50px;color:#000;margin-left:-10px;line-height:50%;","line-height:50%;font-weight:bold;font-size:50px;color:#000;margin-left:-10px;","margin-left:4rem;border-right:5px solid #000;border-bottom:5px solid #000;margin-top:-25px;border-radius:5px;line-height:200%","margin-left:10px;border-left:5px solid #000;border-bottom:5px solid #000;margin-top:-25px;border-radius:5px;line-height:200%");
+           console.log("Hapy April!");
+       }) 
+    </script>
+    <style type="text/css">
+        @font-face {
+            font-family: "CaveatBrush";
+            src: url("./CaveatBrush-Regular.ttf");
+          }
+
+        html, body{
+            margin:0;
+            padding: 0;;
+            width:100%;
+            height: 100%;
+        }
+        body{
+            background: #e6d8f3 url("./bg1.jpg") repeat-x bottom fixed;
+            text-align: center;
+        }
+        h1{
+            margin:0;
+            font-family: "CaveatBrush", sans-serif;
+            font-weight: normal;
+            font-size: min(60vw,8vh);
+        }
+        p{
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-size:1.75rem;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="header">Your download will start in <span class="counter"></span> seconds...</h1>
+    <p class="subtitle">If download doesn't start, click <a href="#">here</a>.</p>
+</body>
+</html>

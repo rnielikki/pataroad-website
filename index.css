@@ -54,7 +54,7 @@ html, body{
     border-radius: 0.5em;
     border:1px solid #303060;
 }
-.download:hover, .download:focus{
+.download:not(.download-disabled):hover, .download:not(.download-disabled):focus{
     color:#71cbff;
     background:#2d2d4e linear-gradient(0, #2b2b60,#282874);
     border:5px solid #9cacff;
