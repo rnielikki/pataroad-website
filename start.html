@@ -10,6 +10,7 @@
            const counter = document.querySelector(".counter");
            const header = document.querySelector(".header");
            const subtitle = document.querySelector(".subtitle");
+           const video = document.querySelector("video");
            let count = 10;
            const internval = setInterval(function(){
                count--;
@@ -22,6 +23,13 @@
            }, 1000);
            console.log("\n%c•%c—%c ●%c—%c•\n%c %c \n\n","font-weight:bold;font-size:50px;color:#000;margin-right:-10px;line-height:50%","line-height:50%;font-weight:bold;font-size:50px;color:#000;margin-right:-10px;","border-radius:50%;background-color:#fff;color:#000;font-size:25px;width:50px;height:50px;border:10px solid #000","font-weight:bold;font-size:50px;color:#000;margin-left:-10px;line-height:50%;","line-height:50%;font-weight:bold;font-size:50px;color:#000;margin-left:-10px;","margin-left:4rem;border-right:5px solid #000;border-bottom:5px solid #000;margin-top:-25px;border-radius:5px;line-height:200%","margin-left:10px;border-left:5px solid #000;border-bottom:5px solid #000;margin-top:-25px;border-radius:5px;line-height:200%");
            console.log("Hapy April!");
+           
+           document.querySelector(".subtitle a").addEventListener("click",
+           ()=>{
+               video.style.display="block";
+               video.muted = false;
+               video.play();
+           })
        }) 
     </script>
     <style type="text/css">
@@ -50,10 +58,26 @@
             font-family:Verdana, Geneva, Tahoma, sans-serif;
             font-size:1.75rem;
         }
+        .video-parent{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     </style>
 </head>
 <body>
     <h1 class="header">Your download will start in <span class="counter"></span> seconds...</h1>
     <p class="subtitle">If download doesn't start, click <a href="#">here</a>.</p>
+    <div class="video-parent">
+        <video width="800" autoplay muted loop style="display: none;">
+            <source src="./rickroll-final.mp4" type="video/mp4"> 
+            I never gonna give Patapons up,
+            I never gonna let Patapons down,
+            I never gonna run around and desert Patapons.
+            I never gonna make Patapons cry,
+            I never gonna say goodbye,
+            I never gonna tell a lie and hurt Patapons.
+        </video>
+    </div>
 </body>
 </html>
