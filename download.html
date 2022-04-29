@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download PATAROAD</title>
+    <style type="text/css">
+        @font-face {
+            font-family: "CaveatBrush";
+            src: url("./CaveatBrush-Regular.ttf");
+          }
+
+        html, body{
+            margin:0;
+            padding: 0;;
+            min-width:100%;
+            min-height: 100vh;
+        }
+        html{
+            background-color: #e6d8f3;
+        }
+        body{
+            text-align: center;
+            background: #e6d8f3 url("./bg1.jpg") repeat-x bottom fixed;
+        }
+        h1{
+            margin:0;
+            font-size: min(60vw,8vh);
+        }
+        h2{
+            font-size:3rem;
+        }
+        h1, h2{
+            font-family: "CaveatBrush", sans-serif;
+            font-weight: normal;
+        }
+        p{
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-size:1.75rem;
+        }
+        header{
+            text-align: center;
+            position: relative;
+        }
+        .header-margin{
+            background: transparent url("may-main.png") no-repeat top center;
+            height:180px;
+            background-size: 255px;
+        }
+        .header-content{
+            background-color:rgba(255,255,255,0.8);
+            border: 2px solid grey;
+            display: inline-block;
+            margin: 0 1.5rem;
+            border-radius: 25px;
+            padding: 1.5rem 3rem;
+            position: relative;
+        }
+        details{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-bottom: 2px;
+        }
+        summary{
+            font-size: 1.75rem;
+            background-color: #36374c;
+            mix-blend-mode: multiply;
+            color:#fff;
+            font-family: 'CaveatBrush';
+            padding: 0.5rem 0.8rem;
+        }
+        .detail-block{
+            font-size:1.5rem;
+            padding: 0.8rem 1.2rem;
+            font-weight: 500;
+            position: relative
+        }
+        .detail-block-bg{
+            display: block;
+            position: absolute;
+            top:0;left: 0;right: 0;bottom: 0;
+            background-color: #a6bdbd;
+            mix-blend-mode: overlay;
+        }
+        @supports not (mix-blend-mode: overlay) {
+          .detail-block-bg {
+              display: none;
+          }
+          .detail-block{
+              background-color: #a6bdbd;
+          }
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <div class="header-margin">
+    </div>
+    <div class="header-content">
+        <h1>Thank you for playing PATAROAD &#9829;</h1>
+        <p class="subtitle">If download doesn't start, click <a href="#">here</a>.</p>
+    </div>
+    </header>
+    <h2>Have any question?</h2>
+    <details>
+        <summary>I haven't played Patapon game before. Can I play it?</summary>
+        <div class="detail-block">
+        <div class="detail-block-bg"></div>
+            Of course! The game contains tutorials. You can also change the difficulty on the settings.
+        </div>
+    </details>
+    <details>
+        <summary>How do I open the game?</summary>
+        <div class="detail-block">
+        <div class="detail-block-bg"></div>
+            Unzip the downloaded file, and open <em>PataRoad.exe</em>.<br>
+            Note that the unzipped game size is 1GB, so check if you have enough free space.
+        </div>
+    </details>
+    <details>
+        <summary>The spear/arrow is randomly thrown too fast.</summary>
+        <div class="detail-block">
+        <div class="detail-block-bg"></div>
+            It's known issue. Well, I tried many things, but it still does.<br>
+            I can't fix it, but it's very low chance, so shouldn't affect to the game playing.
+        </div>
+    </details>
+    <details>
+        <summary>The level is too easy/impossible!</summary>
+        <div class="detail-block">
+        <div class="detail-block-bg"></div>
+            About half of the game progress is easy, if player can play very well. Try difficult play mode - better reward is bonus!<br>
+            If the game is too difficult, first, change your strategy. Try different classes or/and summoning boss.<br>
+            If characters die easily, make your army stronger. Develop Rarepons and/or equipments. Check the tips again.<br>
+            I tried going through all levels in legit way, so I'm sure that there is no impossible level.
+        </div>
+    </details>
+    <details>
+        <summary>The game graphic/animation is not good enough.</summary>
+        <div class="detail-block">
+        <div class="detail-block-bg"></div>
+            First, I'm not an artist. Second, it's focused on functionality.<br>
+            Third, after all, it's not original game. So I can do nothing with it anymore.
+        </div>
+    </details>
+    <details>
+        <summary>Do you have any future support of the game?</summary>
+        <div class="detail-block">
+        <div class="detail-block-bg"></div>
+            It depends. If people don't play the game or there is nothing to fix, I have no reason to update.<br>
+            Since the patch or update checking system isn't supported at all, if there is any future update, it won't be performed frequently.
+        </div>
+    </details>
+
+</body>
+</html>
