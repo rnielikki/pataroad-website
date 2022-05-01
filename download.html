@@ -98,7 +98,7 @@
     </div>
     <div class="header-content">
         <h1>Thank you for playing PATAROAD &#9829;</h1>
-        <p class="subtitle">If download doesn't start, click <a href="#">here</a>.</p>
+        <p class="subtitle">If download doesn't start, click <a href="./pataroad-0.8.zip" class="download">here</a>.</p>
     </div>
     </header>
     <h2>Have any question?</h2>
@@ -126,6 +126,16 @@
         </div>
     </details>
     <details>
+        <summary>I found a bug. Can I report it?</summary>
+        <div class="detail-block">
+        <div class="detail-block-bg"></div>
+            Maybe?<br>
+            Well, nobody blocks reporting, but the fixing requires "next version", so cannot be fixed so fast.<br>
+            Also, if you can't reproduce the steps, there is high chance of that the bug cannot be fixed.<br>
+            Note: Some of the things you thought it's bug, can be actually "feature/by design" ;)
+        </div>
+    </details>
+    <details>
         <summary>The level is too easy/impossible!</summary>
         <div class="detail-block">
         <div class="detail-block-bg"></div>
@@ -133,6 +143,14 @@
             If the game is too difficult, first, change your strategy. Try different classes or/and summoning boss.<br>
             If characters die easily, make your army stronger. Develop Rarepons and/or equipments. Check the tips again.<br>
             I tried going through all levels in legit way, so I'm sure that there is no impossible level.
+        </div>
+    </details>
+    <details>
+        <summary>Do you have any guide for the game?</summary>
+        <div class="detail-block">
+        <div class="detail-block-bg"></div>
+            Not right now :(<br>
+            But if you want, you can make the game guide, and also I can make guide on demand.
         </div>
     </details>
     <details>
@@ -151,6 +169,10 @@
             Since the patch or update checking system isn't supported at all, if there is any future update, it won't be performed frequently.
         </div>
     </details>
-
+    <script>
+        window.onload = function(){
+            document.querySelector(".download").click();
+        }
+    </script>
 </body>
 </html>
