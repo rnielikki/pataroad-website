@@ -5,6 +5,9 @@ html, body{
     min-height: 100%;
     min-width:600px;
 }
+body{
+    background-color: #000;/*canvas fallback*/
+}
 @font-face {
     font-family: "PataponFont";
     src: url("https://rnielikki.github.io/PataponFarmingInfo/rarepon/MojiponStd-Regular.otf");
@@ -91,6 +94,10 @@ html, body{
     background: #5d566c;
     border: 5px solid #414454;
 }
+.main-footer{
+    color:#fff;
+    font-size:2rem;
+}
 /* card content */
 .card{
     width:100%;
@@ -161,4 +168,12 @@ footer a:focus, footer a:hover{
         padding:4rem 3rem 2.2rem 3rem;
         gap:1rem;
     }
+}
+.main-footer > a{
+    color: #9ca8e3;
+}
+.main-footer>a:focus, .main-footer >a:hover{
+    color: #ff9fdd;
+    background-color: #000000aa;
+    border: 3px solid #606060;
 }

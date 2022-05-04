@@ -1,0 +1,139 @@
+@font-face {
+    font-family: "CaveatBrush";
+    src: url("./CaveatBrush-Regular.ttf");
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    ;
+    min-width: 100%;
+    min-height: 100vh;
+}
+
+html {
+    background-color: #e6d8f3;
+}
+
+body {
+    text-align: center;
+    background: #e6d8f3 url("./bg1.jpg") repeat-x bottom fixed;
+}
+
+h1 {
+    margin: 0;
+    margin-bottom: 1.5rem;
+    font-size: min(60vw, 8vh);
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h1,
+h2 {
+    font-family: "CaveatBrush", sans-serif;
+    font-weight: normal;
+}
+
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.75rem;
+}
+
+header {
+    text-align: center;
+    position: relative;
+}
+
+.header-margin {
+    background: transparent url("may-main.png") no-repeat top center;
+    height: 180px;
+    background-size: 255px;
+}
+
+.header-content {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid grey;
+    display: inline-block;
+    margin: 0 1.5rem;
+    border-radius: 25px;
+    padding: 1.5rem 3rem;
+    position: relative;
+}
+
+details {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 2px;
+}
+
+summary {
+    font-size: 1.75rem;
+    background-color: #36374c;
+    mix-blend-mode: multiply;
+    color: #fff;
+    font-family: 'CaveatBrush';
+    padding: 0.5rem 0.8rem;
+}
+
+.detail-block {
+    font-size: 1.5rem;
+    padding: 0.8rem 1.2rem;
+    font-weight: 500;
+    position: relative
+}
+
+.detail-block-bg {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #a6bdbd;
+    mix-blend-mode: overlay;
+}
+
+@supports not (mix-blend-mode: overlay) {
+    .detail-block-bg {
+        display: none;
+    }
+
+    .detail-block {
+        background-color: #a6bdbd;
+    }
+}
+
+.link-main {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #000;
+    text-decoration: none;
+    bottom: 0;
+    right: 0;
+    font-size: 1.8rem;
+    padding: 0.6rem 0.8rem;
+    font-family: 'CaveatBrush';
+    display: block;
+    margin: 2rem 4rem 0 4rem;
+}
+
+.link-main:hover,
+.link-main:focus {
+    background-color: rgba(87, 40, 92, 0.8);
+    color: #fff;
+}
+
+ul:not(li>ul) {
+    list-style-type: square;
+    list-style-position: inside;
+}
+
+.main-footer>a {
+    color: #adb3ff;
+}
+.main-footer>a:hover, .main-footer:a>focus{
+    color: #ff9fdd;
+    background-color: #000000aa;
+    border: 3px solid #606060;
+}
