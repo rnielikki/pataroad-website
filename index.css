@@ -19,7 +19,7 @@ body{
 .main{
     position: relative;
     width:100%;
-    overflow-x: hidden;
+    overflow: hidden;
     height:80vh;
     margin-bottom: -1px;
 }

@@ -86,6 +86,7 @@ summary {
 
 .detail-block-bg {
     display: block;
+    pointer-events: none;
     position: absolute;
     top: 0;
     left: 0;
@@ -93,6 +94,31 @@ summary {
     bottom: 0;
     background-color: #a6bdbd;
     mix-blend-mode: overlay;
+}
+.detail-copy{
+    text-align: right;
+    margin: 0;
+}
+.detail-copy img{
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: #24030394;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.detail-copy img:hover, .detail-copy img:focus{
+    background-color: #0e405c;
+    border: 5px solid #303030;
+}
+.clipboard-message{
+    background-color: #000000aa;
+    color:#fff;
+    font-size:1.25rem;
+    border:1px solid #ccc;
+    padding:0.4rem 0.6rem;
+    position: absolute;
+    bottom: 0;
+    right: 4rem;
 }
 
 @supports not (mix-blend-mode: overlay) {

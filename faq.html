@@ -6,17 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PATAROAD Q&A</title>
     <link rel="stylesheet" href="page.css" />
+    <script src="detail-open.js"></script>
 </head>
 <body>
     <h1>Have any question?</h1>
-    <details>
+    <details id="first">
         <summary>I haven't played Patapon game before. Can I play it?</summary>
         <div class="detail-block">
         <div class="detail-block-bg"></div>
             Of course! The game contains tutorials. You can also change the difficulty on the settings.
         </div>
     </details>
-    <details>
+    <details id="open-game">
         <summary>How do I open the game?</summary>
         <div class="detail-block">
         <div class="detail-block-bg"></div>
@@ -24,7 +25,7 @@
             Note that the unzipped game size is 1GB, so check if you have enough free space.
         </div>
     </details>
-    <details>
+    <details id="random-throw">
         <summary>The spear/arrow is randomly thrown too fast.</summary>
         <div class="detail-block">
         <div class="detail-block-bg"></div>
@@ -32,7 +33,7 @@
             I can't fix it, but it's very low chance, so shouldn't affect to the game playing.
         </div>
     </details>
-    <details>
+    <details id="bug">
         <summary>I found a bug. Can I report it?</summary>
         <div class="detail-block">
         <div class="detail-block-bg"></div>
@@ -44,7 +45,17 @@
             And Some of the things you thought it's bug, can be actually "feature/by design" ;)
         </div>
     </details>
-    <details>
+    <details id="no-sync">
+        <summary>Music is not in sync.</summary>
+        <div class="detail-block">
+        <div class="detail-block-bg"></div>
+        I tried to fix music, but it's still very hard work.<br>
+        So currnetly there is no plan to update music.<br>
+        Still, if you play easy/normal or with metronome, there shoulnd be no problem.<br>
+        See also <a href="./changelog.html#0.81-1">0.81-1 changelog</a>.
+        </div>
+    </details>
+    <details id="difficulty">
         <summary>The level is too easy/impossible!</summary>
         <div class="detail-block">
         <div class="detail-block-bg"></div>
@@ -54,7 +65,7 @@
             I tried going through all levels in legit way, so I'm sure that there is no impossible level.
         </div>
     </details>
-    <details>
+    <details id="guide">
         <summary>Do you have any guide for the game?</summary>
         <div class="detail-block">
         <div class="detail-block-bg"></div>
@@ -62,15 +73,15 @@
             But if you want, you can make the game guide, and also I can make guide on demand.
         </div>
     </details>
-    <details>
-        <summary>The game graphic/animation is not good enough.</summary>
+    <details id="graphic">
+        <summary>The game graphic/animation/sound etc is not good enough.</summary>
         <div class="detail-block">
         <div class="detail-block-bg"></div>
             First, I'm not an artist. Second, it's focused on functionality.<br>
             Third, after all, it's not original game. So I can do nothing with it anymore.
         </div>
     </details>
-    <details>
+    <details id="support">
         <summary>Do you have any future support of the game?</summary>
         <div class="detail-block">
         <div class="detail-block-bg"></div>
