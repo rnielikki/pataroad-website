@@ -81,7 +81,8 @@ summary {
     font-size: 1.5rem;
     padding: 0.8rem 1.2rem;
     font-weight: 500;
-    position: relative
+    position: relative;
+    text-align:left;
 }
 
 .detail-block-bg {
